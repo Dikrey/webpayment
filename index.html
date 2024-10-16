@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="PAYMENT">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/x-icon" href="images/iconweb.jpg">
+  <title>PAYMENT RAIHAN OFFICIAL</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    :root {
+      font-size: 62.5%;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(to right, #1a73e8, #00c6ff);
+      width: 100%;
+      height: 100vh;
+      
+    }
+
+    .rain {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    main {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      z-index: 2;
+    }
+
+  .container {
+  width: 28rem;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 1.5rem 0.2rem rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(1rem);
+  text-align: center;
+  margin-bottom: -5rem;
+}
+
+    .image {
+      width: 40%;
+      height: auto;
+      border-radius: 5rem;
+      margin: 1rem auto;
+    }
+
+    h1 {
+      font-family: 'Muli', sans-serif;
+      font-weight: 700;
+      font-size: 2.4rem;
+      color: #fff;
+      margin-bottom: 1rem;
+      margin-left: -1rem;
+    }
+
+    .animated-text {
+      font-size: 1.6rem;
+      color: #fff;
+      font-family: 'Space Mono', monospace;
+      margin-bottom: 1rem;
+      animation: textSlide 4s infinite;
+    }
+
+    @keyframes textSlide {
+      0% {
+        opacity: 0;
+        transform: translateY(100%);
+      }
+      10%, 40% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      60% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      80%, 100% {
+        opacity: 0;
+        transform: translateY(-100%);
+      }
+    }
+
+    .link-boxes {
+      margin: 2rem 1rem;
+      font-family: 'Muli', sans-serif;
+      font-weight: 700;
+      font-size: 1.4rem;
+      text-transform: capitalize;
+    }
+
+    .link-boxes a {
+      text-decoration: none;
+      display: block;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.2);
+      border: 0.1rem solid #fff;
+      margin: 0.7rem;
+      border-radius: 0.5rem;
+      padding: 0.6rem;
+      transition: all 0.3s ease-in-out;
+      animation: pulse 2s infinite alternate;
+    }
+
+    .link-boxes a:nth-child(odd) {
+      animation-delay: 0.5s;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        background: rgba(0, 0, 0, 0.2);
+      }
+      100% {
+        transform: scale(1.05);
+        background: #00c6ff;
+        box-shadow: 0 0 1rem rgba(255, 255, 255, 0.5);
+      }
+    }
+
+    hr {
+      border-color: #fff;
+    }
+
+    .music-controls {
+      display: flex;
+      justify-content: center;
+      margin-top: 1.5rem;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .music-controls button {
+      background: #fff;
+      border: none;
+      border-radius: 50%;
+      padding: 1rem;
+      font-size: 1.5rem;
+      color: #1a73e8;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1rem;
+    }
+
+    .music-controls button:hover {
+      transform: scale(1.1);
+      background: #00c6ff;
+      color: #fff;
+    }
+
+    .status {
+      font-family: 'Muli', sans-serif;
+      font-size: 1.4rem;
+      color: #fff;
+    }
+
+    @media only screen and (min-width:992px) {
+      .image {
+        width: 40%;
+      }
+
+      h1 {
+        font-size: 2.6rem;
+      }
+      .container {
+    width: 90%;
+    padding: 1rem;
+    margin-bottom: -25rem;
+
+}
+    }
+  </style>
+</head>
+<body>
+  <div class="rain"></div>
+  <audio id="background-music" src="media/sound.mp3" loop></audio>
+  
+  <main>
+    <div class="container">
+      <img class="image" src="images/iconweb.jpg" alt="siputzx Picture" loading="lazy">
+      <h1>RAIHAN_OFFICIAL0307</h1>
+      <p class="animated-text">Mau Bertransaksi? Yuk Klik Tombol di Bawah!</p>
+     
+      <hr>
+      <div class="link-boxes">
+        <a title="Send a message to Raihan" href="https://wa.me/6285763416693" target="_blank">
+          <i class="fab fa-whatsapp"></i> WhatsApp 1
+        </a>
+        <a title="Info tentang store" href="https://chat.whatsapp.com/CmVA36LVqd1JmbCqsH1A2Q" target="_blank">
+          <i class="fab fa-whatsapp"></i> INFO TENTANG STORE
+        </a>
+        <a title="Send a message to Telegram" href="https://t.me/raihan_official0307/" target="_blank">
+          <i class="fa-solid fa-paper-plane"></i> Telegram
+        </a>
+        <a title="DANA" href="https://i.ibb.co.com/fHHx3Gf/Dana-085763416693.png" target="_blank">
+          <i class="fab fa-dana"></i> DANA
+        </a>
+        <a title="QRISS ALL PAY" href="https://i.ibb.co.com/sKf83Qc/Dana-085763416693-1.png" target="_blank">
+          <i class="fa fa-qriz"></i> QRIZZ AL PAY
+        </a>
+        <a title="Subscribe to Raihan on YouTube" href="https://www.youtube.com/@Raihan_official-ju9go" target="_blank">
+          <i class="fab fa-dana"></i> Youtube
+        </a>
+        <a title="Follow to Raihan on instagram" href="https://www.instagram.com/muhammad_raihan0307" target="_blank">
+          <i class="fab fa-dana"></i> Instagram
+        </a>
+        <a title="Follow to Raihan on Tiktok" href="https://www.tiktok.com/@raihannstore" target="_blank">
+          <i class="fab fa-dana"></i> Tiktok
+        </a>
+
+      </div>
+      <p class="animated-text">&copy; Raihan_official0307 </p>
+      <hr>
+      <div class="music-controls">
+        <button id="play-pause-btn"><i class="fa fa-play"></i></button>
+        <div class="status" id="music-status">Music is stopped</div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+alert('Hai! Mau punya website sederhana yang bisa kamu sesuaikan sesuai keinginan? Saya menyediakan jasa pembuatan semua jenis website, dari yang sederhana hingga yang kompleks! Klik tombol di bawah ini ya! Jika ada pertanyaan atau butuh info lebih lanjut, langsung aja ke WA developer. Yuk, wujudkan website impianmu sekarang!');  
+// Mencegah pintasan keyboard untuk membuka alat pengembang
+document.addEventListener('keydown', function (e) {
+    // Menyaring pintasan yang umum digunakan untuk membuka alat pengembang
+    if ((e.ctrlKey || e.metaKey) && (e.key === 'I' || e.key === 'J' || e.key === 'U') ||
+        e.keyCode === 123 || // F12 key
+        (e.ctrlKey && e.shiftKey && e.keyCode === 73) // Ctrl+Shift+I
+    ) {
+        e.preventDefault();
+        Swal.fire('ANDA MAU NGAPAIN?', 'Tidak Mengizinkan Klik Kanan', 'error');
+    }
+});
+// Menonaktifkan klik kanan
+document.addEventListener('contextmenu', function (event) {
+    event.preventDefault();
+    Swal.fire('ANDA MAU NGAPAIN?', 'Tidak Mengizinkan Klik Kanan!', 'error');
+});
+document.addEventListener('keydown', function (event) {
+    if (event.ctrlKey && event.key === 'u') {
+        event.preventDefault();
+        Swal.fire('Memblokir Ctrl+U', 'RaihanProduction', 'error');
+    }
+});
+
+    const playPauseBtn = document.getElementById('play-pause-btn');
+    const musicStatus = document.getElementById('music-status');
+    const backgroundMusic = document.getElementById('background-music');
+
+    playPauseBtn.addEventListener('click', () => {
+      if (backgroundMusic.paused) {
+        backgroundMusic.play();
+        playPauseBtn.innerHTML = '<i class="fa fa-pause"></i>';
+        musicStatus.textContent = 'Music is playing';
+      } else {
+        backgroundMusic.pause();
+        playPauseBtn.innerHTML = '<i class="fa fa-play"></i>';
+        musicStatus.textContent = 'Music is paused';
+      }
+    });
+
+    // Rain Animation
+    const rainContainer = document.querySelector('.rain');
+    for (let i = 0; i < 100; i++) {
+      const drop = document.createElement('div');
+      drop.className = 'drop';
+      drop.style.left = Math.random() * 100 + 'vw';
+      drop.style.animationDelay = Math.random() * 2 + 's';
+      rainContainer.appendChild(drop);
+    }
+  </script>
+  <style>
+    .drop {
+      position: absolute;
+      bottom: 100%;
+      width: 2px;
+      height: 50px;
+      background: rgba(255, 255, 255, 0.5);
+      animation: fall 2s linear infinite;
+    }
+
+    @keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      10% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(110vh);
+        opacity: 0;
+      }
+    }
+  </style>
+</body>
+</html>
